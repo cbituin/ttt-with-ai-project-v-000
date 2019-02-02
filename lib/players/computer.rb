@@ -22,7 +22,7 @@ class Players
       # board.valid_move?(randomMove) ? randomMove.to_s : move(board)
 #########     Initial "dumb" logic      ######### 
 
-    WIN_COMBINATIONS.any? do |combo| #iterate over WIN_COMBINATIONS
+    WIN_COMBINATIONS.each do |combo| #iterate over WIN_COMBINATIONS
     position_1 = board.cells[combo[0]]
     position_2 = board.cells[combo[1]]
     position_3 = board.cells[combo[2]]
