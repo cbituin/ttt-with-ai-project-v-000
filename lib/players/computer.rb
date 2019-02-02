@@ -28,12 +28,16 @@ class Players
     position_3 = board.cells[combo[2]]
     # binding.pry
       if position_1 == position_2
-        binding.pry
-        board.valid_move?(combo[2]) ? combo[2].to_s : move(board)
+        # board.valid_move?(combo[2]) ? combo[2].to_s : move(board)
+        combo[2].to_s
       elsif position_2 == position_3
-        board.valid_move?(combo[0]) ? combo[0].to_s : move(board)
+        # board.valid_move?(combo[0]) ? combo[0].to_s : move(board)
+        combo[0].to_s
       elsif position_1 == position_3
-        board.valid_move?(combo[1]) ? combo[1].to_s : move(board)
+        # board.valid_move?(combo[1]) ? combo[1].to_s : move(board)
+        combo[1].to_s
+      else
+        move(board)
       end
     
     end
