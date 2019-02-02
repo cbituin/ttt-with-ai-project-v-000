@@ -26,7 +26,14 @@ class Players
     position_1 = board.cells[combo[0]]
     position_2 = board.cells[combo[1]]
     position_3 = board.cells[combo[2]]
-    return combo if position_1 == position_2 && position_2 == position_3 && position_1 != " "
+      if position_1 == position_2
+        position_3.to_s
+      elsif position_2 == position_3 
+        position_1.to_s
+      elsif position_1 == position_3
+        position_2.to_s
+      end
+    
     end
 
 
