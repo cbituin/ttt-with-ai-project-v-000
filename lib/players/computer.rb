@@ -30,9 +30,9 @@ class Players
       if position_1 == position_2 && board.valid_move?(combo[2])
         # board.valid_move?(combo[2]) ? combo[2].to_s : move(board)
         combo[2].to_s
-      elsif position_2 == position_3  && board.valid_move?(combo[0])
-        # board.valid_move?(combo[0]) ? combo[0].to_s : move(board)
-        combo[0].to_s
+      # elsif position_2 == position_3  && board.valid_move?(combo[0])
+      #   # board.valid_move?(combo[0]) ? combo[0].to_s : move(board)
+      #   combo[0].to_s
       elsif position_1 == position_3 && board.valid_move?(combo[1])
         # board.valid_move?(combo[1]) ? combo[1].to_s : move(board)
         combo[1].to_s
